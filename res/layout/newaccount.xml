@@ -38,7 +38,8 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:onClick="cancelButton"
-            android:text="@string/newaccount_cancel" />
+            android:text="@string/newaccount_cancel"
+            android:background="@drawable/button_cancel" />
 
         <Button
             android:id="@+newaccount/submit"
@@ -47,7 +48,8 @@
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+newaccount/cancel"
             android:onClick="submitButton"
-            android:text="@string/newaccount_submit" />
+            android:text="@string/newaccount_submit"
+            android:background="@drawable/button_normal" />
 
     </RelativeLayout>
 

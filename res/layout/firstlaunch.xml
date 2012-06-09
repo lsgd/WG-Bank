@@ -85,7 +85,7 @@
             android:layout_centerHorizontal="true"
             android:text="@string/firstlaunch_submit"
             android:onClick="createAccount"
-            android:background="@drawable/button" />
+            android:background="@drawable/button_normal" />
     </RelativeLayout>
 
 </LinearLayout>
