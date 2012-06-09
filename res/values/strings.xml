@@ -4,4 +4,12 @@
     <string name="hello">Hello World!</string>
     <string name="app_name">WG-Bank</string>
 	<string name="aktualisieren">Aktualisieren</string>
+    <string name="firstlaunch_welcome">Willkommen bei der WG-Bank</string>
+    <string name="firstlaunch_phone_description">Bitte gib deine Telefonnummer zur Identifizierung ein:</string>
+    <string name="firstlaunch_password_description">Falls du bereits einen Zugang besitzt, gib bitte dein Passwort mit ein:</string>
+    <string name="firstlaunch_submit">Jetzt kostenlos anmelden</string>
+    <string name="newaccount_headline">Neuen Zugang erstellen</string>
+    <string name="newaccount_name_description">Bitte trage deinen Namen ein, der in deinen Projekten angezeigt werden soll:</string>
+    <string name="newaccount_submit">Zugang anlegen</string>
+    <string name="newaccount_cancel">Abbrechen</string>
 </resources>
