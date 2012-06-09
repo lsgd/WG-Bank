@@ -19,15 +19,13 @@ public class RefreshButtonOnClickListener implements OnClickListener {
 		JSONObject obj = new JSONObject();
 		try {
 			obj.put("Action", "data");
+			obj.put("Number", "01706218975");
+			obj.put("Date", "0");
+			obj.put("AuthPerson", "e90143a899bfffe3de43907c12f558789537af4d");
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		try {
-			obj.put("Person", "01706218975");
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			Toast.makeText(refreshButton.getContext(), "JSONException1", Toast.LENGTH_LONG).show();
 		}
 		String response = HttpUtils.postData("http://wgbank.lukas-schulze.de/index.php", obj);
 		if(response == null) 
@@ -37,7 +35,19 @@ public class RefreshButtonOnClickListener implements OnClickListener {
 		else
 		{
 			Toast.makeText(refreshButton.getContext(), response, Toast.LENGTH_LONG).show();
+			JSONObject responseJson;
+			try {
+				responseJson = new JSONObject(response);
+				parseJsonResponse(responseJson);
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
+	}
+	
+	public void parseJsonResponse(JSONObject responseJson) {
+		
 	}
 
 }
