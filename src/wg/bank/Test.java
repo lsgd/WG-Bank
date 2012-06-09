@@ -12,7 +12,8 @@ public class Test extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		OurSQLiteHelper sqliteHelper = new OurSQLiteHelper(getBaseContext());
-		//sqliteHelper.onCreate(sqliteHelper.getWritableDatabase());
+		
+		sqliteHelper.onCreate(sqliteHelper.getWritableDatabase());
 		//TextView textview = new TextView(this);
         //textview.setText("Test it");
         setContentView(R.layout.button);
