@@ -15,27 +15,28 @@ import android.widget.Toast;
 
 public class PersonActivity extends Activity {
 	
-	private static final String[] SOURCE = null;
+	private static final String[] SOURCE = {"Lukas", "Anja", "Mandy", "Saskia", "Leon"};
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
 
-	  ListAdapter adap =new ArrayAdapter<String>(this, R.layout.person_list_element, SOURCE);
+	  
 	 
 	  setContentView(R.layout.persons_tab);
 	  
 	  ListView lv = (ListView) findViewById(R.id.list_persons);
-	  lv.setTextFilterEnabled(true);
+	  ListAdapter adapter =new ArrayAdapter<String>(this, R.layout.person_list_element, SOURCE);
+	  lv.setAdapter(adapter);
 	  
 	 
 	  //setContentView(lv);
 	  
 	 
 	}
-	public void addPerson(){
+	public void addPerson(View v){
 		Intent intent;
-		intent= new Intent();
+		intent= new Intent().setClass(this, AddPersonActivity.class);
 	}
 	
 }
