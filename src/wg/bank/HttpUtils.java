@@ -50,13 +50,13 @@ public class HttpUtils {
 
 	        //HttpResponse response = httpclient.execute(httppost);
 	        //return EntityUtils.toString(response.getEntity());
-	        return "Response was empty";
+	        return "Error";
 
 
 	    } catch (ClientProtocolException e) {
-	    	return "ClientException";
+	    	return "Error";
 	    } catch (IOException e) {
-	    	return e.toString();
+	    	return "Error";
 	    }
 	    
 	}
