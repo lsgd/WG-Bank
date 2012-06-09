@@ -15,7 +15,7 @@ public class Test extends Activity {
 		//sqliteHelper.onCreate(sqliteHelper.getWritableDatabase());
 		//TextView textview = new TextView(this);
         //textview.setText("Test it");
-        setContentView(R.layout.main);
+        setContentView(R.layout.button);
         
         Button refreshButton = (Button) findViewById(R.id.button1);
         refreshButton.setOnClickListener(new RefreshButtonOnClickListener());
