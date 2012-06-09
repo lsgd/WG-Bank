@@ -1,10 +1,13 @@
 package wg.bank;
 
+import java.util.Date;
+
 //import java.util.ArrayList;
 
 public class Payment {
 	
-	
+	public String name;
+	public Date date;
 	public double amount;
 	public Person paying_Person;
 	public Project relevant_Project;
@@ -17,10 +20,12 @@ public class Payment {
 	 * @param
 	 * @param
 	 */
-	public Payment(double amount, Person paying_Person, Project relevant_Project) {
+	public Payment(String name, Date date ,double amount, Person paying_Person, Project relevant_Project) {
 		this.amount = amount;
 		this.paying_Person = paying_Person;
 		this.relevant_Project = relevant_Project;
+		this.date=date;
+		this.name=name;
 		//this.payment_Distribution=payment_Distribution;
 	}
 	
