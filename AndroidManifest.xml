@@ -14,6 +14,14 @@
             android:launchMode="singleInstance" >
         </activity>
         <activity
+            android:name="tabs.projecttabs.SubmitEventActivity"
+           >
+        </activity>
+        <activity
+            android:name="tabs.projecttabs.EventActivity"
+            android:launchMode="singleInstance" >
+        </activity>
+        <activity
             android:name="tabs.bank.StartActivity"
             android:launchMode="singleInstance" >
         </activity>

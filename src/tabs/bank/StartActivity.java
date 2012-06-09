@@ -11,7 +11,7 @@ public class StartActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.button);
+		setContentView(R.layout.startscreen);
 	
 		
 	}
