@@ -10,6 +10,6 @@ public class StartActivity extends Activity {
 
         TextView textview = new TextView(this);
         textview.setText("Das ist der Start-Tab");
-        setContentView(textview);
+        setContentView(R.layout.person_list_element);
     }
 }
