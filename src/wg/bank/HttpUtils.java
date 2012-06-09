@@ -1,14 +1,18 @@
 package wg.bank;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicHeader;
+import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
@@ -31,21 +35,28 @@ public class HttpUtils {
 
 	    try {
 
-	        HttpPost httppost = new HttpPost(url);
-	        httppost.setHeader("Content-type", "application/json");
+	    	HttpClient client = new DefaultHttpClient();  
+	        String postURL = "http://wgbank.lukas-schulze.de/index.php";
+	        HttpPost post = new HttpPost(postURL); 
+	            List<NameValuePair> params = new ArrayList<NameValuePair>();
+	            params.add(new BasicNameValuePair("json", json));
+	            UrlEncodedFormEntity ent = new UrlEncodedFormEntity(params,HTTP.UTF_8);
+	            post.setEntity(ent);
+	            HttpResponse responsePOST = client.execute(post);  
+	            HttpEntity resEntity = responsePOST.getEntity();  
+	            if (resEntity != null) {    
+	               return EntityUtils.toString(resEntity);
+	            } 
 
-	        StringEntity stringEntity = new StringEntity(obj.toString()); 
-	        stringEntity.setContentEncoding(new BasicHeader(HTTP.CONTENT_TYPE, "application/json"));
-	        httppost.setEntity(stringEntity); 
-
-	        HttpResponse response = httpclient.execute(httppost);
-	        return EntityUtils.toString(response.getEntity());
+	        //HttpResponse response = httpclient.execute(httppost);
+	        //return EntityUtils.toString(response.getEntity());
+	        return "Error";
 
 
 	    } catch (ClientProtocolException e) {
-	    	return "ClientException";
+	    	return "Error";
 	    } catch (IOException e) {
-	    	return e.toString();
+	    	return "Error";
 	    }
 	    
 	}
