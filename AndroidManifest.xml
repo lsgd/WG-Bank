@@ -10,15 +10,15 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".EinstellungenActivity"
+            android:name="tabs.bank.EinstellungenActivity"
             android:launchMode="singleInstance" >
         </activity>
         <activity
-            android:name=".StartActivity"
+            android:name="tabs.bank.StartActivity"
             android:launchMode="singleInstance" >
         </activity>
         <activity
-            android:name=".TabWidget"
+            android:name="tabs.bank.TabWidget"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -30,7 +30,7 @@
         
         
          <activity
-            android:name=".PersonActivity"
+            android:name="tabs.projecttabs.PersonActivity"
             android:launchMode="singleInstance" >
         </activity>
          <activity
@@ -38,15 +38,15 @@
             android:launchMode="singleInstance" >
         </activity>
          <activity
-            android:name=".Projectscreen_Tabs"
-            android:label="@string/app_name"
+            android:name="tabs.projecttabs.Projectscreen_Tabs"
+            
             android:launchMode="singleInstance"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            >
             
         </activity>
           
          <activity
-            android:name=".AddPersonActivity"
+            android:name="tabs.projecttabs.AddPersonActivity"
             android:launchMode="singleInstance" >
         </activity>  
             

@@ -2,7 +2,8 @@ package tabs.projecttabs;
 
 
 import wg.bank.R;
-import wg.bank.StartActivity;
+
+
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.res.Resources;
@@ -12,7 +13,7 @@ import android.widget.TabHost;
 public class Projectscreen_Tabs extends TabActivity{
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.main);
+	    setContentView(R.layout.main2);
 
 	    Resources res = getResources(); // Resource object to get Drawables
 	    TabHost tabHost = getTabHost();  // The activity TabHost
@@ -20,7 +21,7 @@ public class Projectscreen_Tabs extends TabActivity{
 	    Intent intent;  // Reusable Intent for each tab
 
 	    // Create an Intent to launch an Activity for the tab (to be reused)
-	    intent = new Intent().setClass(this, StartActivity.class);
+	    intent = new Intent().setClass(this, tabs.projecttabs.PersonActivity.class);
 
 	    // Initialize a TabSpec for each tab and add it to the TabHost
 	    spec = tabHost.newTabSpec("start").setIndicator("Start",
@@ -29,9 +30,9 @@ public class Projectscreen_Tabs extends TabActivity{
 	    tabHost.addTab(spec);
 
 	    // Do the same for the other tabs
-	    intent = new Intent().setClass(this, PersonActivity.class);
-	    spec = tabHost.newTabSpec("einstellungen").setIndicator("Einstellungen",
-	                      res.getDrawable(R.drawable.ic_tab_einstellungen))
+	    intent = new Intent().setClass(this, tabs.bank.TabWidget.class);
+	    spec = tabHost.newTabSpec("Home").setIndicator("Einstellungen",
+	                      res.getDrawable(R.drawable.ic_tab_start_white))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
