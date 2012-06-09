@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:src="@drawable/garbage2"
-             android:background="@drawable/button"
+             android:background="@drawable/button_normal"
             >
         </ImageButton>
     </LinearLayout>
