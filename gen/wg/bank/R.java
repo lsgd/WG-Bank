@@ -24,7 +24,8 @@ public final class R {
         public static final int balance=0x7f050004;
         public static final int button1=0x7f050002;
         public static final int editText2=0x7f050001;
-        public static final int list_persons=0x7f050005;
+        public static final int list_persons=0x7f050006;
+        public static final int listbutton=0x7f050005;
         public static final int name=0x7f050003;
         public static final int textView1=0x7f050000;
     }

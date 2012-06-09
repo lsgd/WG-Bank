@@ -2,19 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="vertical" >
+    android:orientation="horizontal" >
 
     <TextView
         android:id="@+id/name"
+        android:textSize="16px"
+         android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content" >
     </TextView>
-	<TextView
-	    android:id="@+id/balance"
-	    android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-      
-	    ></TextView>
-	    
+
+    <TextView
+        android:id="@+id/balance"
+        android:textSize="12px"
+         android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </TextView>
+
+<!--     <TextView -->
+<!--         android:id="@+id/bubu" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" > -->
+<!--     </TextView> -->
+
+    <Button
+    android:id="@+id/listbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    </Button>
+
 </LinearLayout>

@@ -37,18 +37,19 @@ public class PersonActivity extends Activity {
 		        this,
 		        myListing,
 		        R.layout.person_list_element,
-		        new String[] { "line1","line2" },
-		        new int[] { R.id.name, R.id.balance }  );
+		        new String[] { "line1","line2", "button"},
+		        new int[] { R.id.name, R.id.balance, R.id.listbutton}  );
 		lv.setAdapter( saList);
 	 // ListAdapter adapter =new ArrayAdapter<String>(this, R.layout.person_list_element, SOURCE);
 	 // lv.setAdapter(adapter);
 	  
 	 
 	  //setContentView(lv);
-		for (int i=0; i<=5; i++) {
+		for (int i=0; i<=4; i++) {
 		     HashMap item = new HashMap();
-		     item.put("line1", "Person Nr. " + String.valueOf(i));
-		     item.put("line2", "Kontostand " + String.valueOf(i+2));
+		     item.put("line1", SOURCE[i]);
+		     item.put("line2", "3,58 Euro");
+		     item.put("button", "X");
 
 		     myListing.add(item);
 		}
