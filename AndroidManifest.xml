@@ -18,12 +18,10 @@
             android:launchMode="singleInstance" >
         </activity>
         <activity
-            android:name="firstlaunch.bank.FirstlaunchActivity"
-            android:launchMode="singleInstance" >
+            android:name="firstlaunch.bank.FirstlaunchActivity">
         </activity>
         <activity
-            android:name="firstlaunch.bank.NewAccountActivity"
-            android:launchMode="singleInstance" >
+            android:name="firstlaunch.bank.NewAccountActivity">
         </activity>
         <activity
             android:name="wg.bank.LauncherActivity"

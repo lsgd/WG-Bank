@@ -54,8 +54,8 @@ public final class R {
     }
     public static final class newaccount {
         public static final int cancel=0x7f070001;
-        public static final int name=0x7f070000;
         public static final int submit=0x7f070002;
+        public static final int tf_name=0x7f070000;
     }
     public static final class string {
         public static final int aktualisieren=0x7f040002;

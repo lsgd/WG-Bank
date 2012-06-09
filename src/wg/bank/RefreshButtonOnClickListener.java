@@ -27,7 +27,7 @@ public class RefreshButtonOnClickListener implements OnClickListener {
 			e.printStackTrace();
 			Toast.makeText(refreshButton.getContext(), "JSONException1", Toast.LENGTH_LONG).show();
 		}
-		String response = HttpUtils.postData("http://wgbank.lukas-schulze.de/index.php", obj);
+		String response = HttpUtils.postData(obj);
 		if(response == null) 
 		{
 			Toast.makeText(refreshButton.getContext(), "sorry", Toast.LENGTH_LONG).show();

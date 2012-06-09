@@ -21,5 +21,6 @@ public class LauncherActivity extends Activity {
 			Intent intent = new Intent().setClass(this, tabs.bank.TabWidget.class);
 			startActivity(intent);
 	    }
+	    finish();
 	}
 }

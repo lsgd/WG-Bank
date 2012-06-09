@@ -18,7 +18,7 @@
         android:text="@string/newaccount_name_description" />
 
     <EditText
-        android:id="@+newaccount/name"
+        android:id="@+newaccount/tf_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
