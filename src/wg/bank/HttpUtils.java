@@ -24,7 +24,7 @@ import android.util.Log;
 
 public class HttpUtils {
 
-	public static String postData(String url, JSONObject obj) {
+	public static String postData(JSONObject obj) {
 	    // Create a new HttpClient and Post Header
 
 	    HttpParams myParams = new BasicHttpParams();
@@ -34,7 +34,6 @@ public class HttpUtils {
 	    String json = obj.toString();
 
 	    try {
-
 	    	HttpClient client = new DefaultHttpClient();  
 	        String postURL = "http://wgbank.lukas-schulze.de/index.php";
 	        HttpPost post = new HttpPost(postURL); 

@@ -13,18 +13,20 @@ public final class R {
     public static final class drawable {
         public static final int add=0x7f020000;
         public static final int button=0x7f020001;
-        public static final int garbage2=0x7f020002;
-        public static final int history=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int ic_tab_einstellungen=0x7f020005;
-        public static final int ic_tab_einstellungen_grey=0x7f020006;
-        public static final int ic_tab_einstellungen_white=0x7f020007;
-        public static final int ic_tab_start=0x7f020008;
-        public static final int ic_tab_start_grey=0x7f020009;
-        public static final int ic_tab_start_white=0x7f02000a;
-        public static final int nav_refresh_green=0x7f02000b;
-        public static final int piggy_bank_euro=0x7f02000c;
-        public static final int signboard_open=0x7f02000d;
+        public static final int button_cancel=0x7f020002;
+        public static final int button_normal=0x7f020003;
+        public static final int garbage2=0x7f020004;
+        public static final int history=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int ic_tab_einstellungen=0x7f020007;
+        public static final int ic_tab_einstellungen_grey=0x7f020008;
+        public static final int ic_tab_einstellungen_white=0x7f020009;
+        public static final int ic_tab_start=0x7f02000a;
+        public static final int ic_tab_start_grey=0x7f02000b;
+        public static final int ic_tab_start_white=0x7f02000c;
+        public static final int nav_refresh_green=0x7f02000d;
+        public static final int piggy_bank_euro=0x7f02000e;
+        public static final int signboard_open=0x7f02000f;
     }
     public static final class firstlaunch {
         public static final int btn_submit=0x7f060004;
@@ -49,18 +51,19 @@ public final class R {
         public static final int addpersonlayout=0x7f030000;
         public static final int eventlayout=0x7f030001;
         public static final int firstlaunch=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int main2=0x7f030004;
-        public static final int newaccount=0x7f030005;
-        public static final int person_list_element=0x7f030006;
-        public static final int persons_tab=0x7f030007;
-        public static final int startscreen=0x7f030008;
-        public static final int submitevent=0x7f030009;
+        public static final int launcher=0x7f030003;
+        public static final int main=0x7f030004;
+        public static final int main2=0x7f030005;
+        public static final int newaccount=0x7f030006;
+        public static final int person_list_element=0x7f030007;
+        public static final int persons_tab=0x7f030008;
+        public static final int startscreen=0x7f030009;
+        public static final int submitevent=0x7f03000a;
     }
     public static final class newaccount {
         public static final int cancel=0x7f070001;
-        public static final int name=0x7f070000;
         public static final int submit=0x7f070002;
+        public static final int tf_name=0x7f070000;
     }
     public static final class string {
         public static final int aktualisieren=0x7f040002;

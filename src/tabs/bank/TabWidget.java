@@ -5,9 +5,11 @@ package tabs.bank;
 import wg.bank.R;
 import android.app.TabActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 public class TabWidget extends TabActivity{
 	public void onCreate(Bundle savedInstanceState) {
