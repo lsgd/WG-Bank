@@ -3,6 +3,7 @@ package bank.details;
 import java.util.Date;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import bank.entities.Person;
@@ -23,16 +24,18 @@ public class PaymentDetails extends Activity {
         super.onCreate(savedInstanceState);
                 
         setContentView(R.layout.details);         
-        EditText tf_project = (EditText) findViewById(R.details.project);       
-        EditText tf_name = (EditText) findViewById(R.details.payment_name);
-        EditText tf_date = (EditText) findViewById(R.details.payment_date);
-        EditText tf_payer = (EditText) findViewById(R.details.payer);
-        EditText tf_amount = (EditText) findViewById(R.details.payment_amount);
+        EditText tf_project = (EditText) findViewById(R.details.payment_project_edit);       
+        EditText tf_name = (EditText) findViewById(R.details.payment_name_edit);
+        EditText tf_date = (EditText) findViewById(R.details.payment_date_edit);
+        EditText tf_payer = (EditText) findViewById(R.details.payer_edit);
+        EditText tf_amount = (EditText) findViewById(R.details.payment_amount_edit);
         
-        tf_project.setText("Test");
-        tf_name.setText("Test");
-        tf_date.setText("Test");
-        tf_payer.setText("Test");
-        tf_amount.setText("Test");
+        Intent intent = getIntent();
+        
+        tf_project.setText(intent.getStringExtra("project"));
+        tf_name.setText(intent.getStringExtra("paym_subject"));
+        tf_date.setText(intent.getStringExtra("date"));
+        tf_payer.setText(intent.getStringExtra("person"));
+        tf_amount.setText(intent.getStringExtra("amount"));
     }
 }

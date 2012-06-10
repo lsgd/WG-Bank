@@ -11,11 +11,16 @@ public final class R {
     public static final class attr {
     }
     public static final class details {
-        public static final int payer=0x7f060003;
-        public static final int payment_amount=0x7f060005;
-        public static final int payment_date=0x7f060004;
+        public static final int payer=0x7f060005;
+        public static final int payer_edit=0x7f060006;
+        public static final int payment_amount=0x7f060009;
+        public static final int payment_amount_edit=0x7f06000a;
+        public static final int payment_date=0x7f060007;
+        public static final int payment_date_edit=0x7f060008;
         public static final int payment_details=0x7f060000;
-        public static final int payment_name=0x7f060002;
+        public static final int payment_name=0x7f060003;
+        public static final int payment_name_edit=0x7f060004;
+        public static final int payment_project_edit=0x7f060002;
         public static final int project=0x7f060001;
     }
     public static final class drawable {

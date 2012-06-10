@@ -36,6 +36,12 @@ public class EventActivity extends Activity {
 			        int position, long id) {
 			      // When clicked, show a toast with the TextView text
 			      Intent intent= new Intent().setClass(getBaseContext(),bank.details.PaymentDetails.class);
+			      intent.putExtra("project", "BeispielName");
+			      intent.putExtra("paym_subject", "BeispielName");
+			      intent.putExtra("date", "BeispielName");
+			      intent.putExtra("person", "BeispielName");
+			      intent.putExtra("amount", "BeispielName");
+			      
 			      startActivity(intent);
 			    }
 			  });
