@@ -119,10 +119,15 @@ public class FirstlaunchActivity extends Activity {
 			editor.putString("Password", data.getStringExtra("Password"));
 			editor.putString("Name", data.getStringExtra("Name"));
 			editor.commit();
+			
+			Intent intent = new Intent().setClass(this, bank.tabs.TabWidget.class);
+			startActivity(intent);
+			
+			finish();
 		}
 		else if(code.equals("2")) {
 			Toast.makeText(_context,
-					"Für diese Nummer existiert bereits ein Benutzer! Bitte gib ein Passwort ein.",
+					"Für diese Nummer existiert bereits ein Benutzer! Bitte gib dein Passwort ein.",
 					Toast.LENGTH_LONG).show();
 			tfPassword.setFocusableInTouchMode(true);
 			tfPassword.requestFocus();
