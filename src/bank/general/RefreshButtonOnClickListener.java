@@ -28,7 +28,7 @@ public class RefreshButtonOnClickListener implements OnClickListener {
 	
 	public void onClick(View refreshButton) {
 		// TODO Auto-generated method stub
-		Toast.makeText(refreshButton.getContext(), "refresh", Toast.LENGTH_LONG).show();
+		//Toast.makeText(refreshButton.getContext(), "refresh", Toast.LENGTH_LONG).show();
 		
 		ourSQLiteHelper = new OurSQLiteHelper(refreshButton.getContext());
 		

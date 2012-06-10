@@ -1,6 +1,7 @@
 package bank.tabs;
 
 import bank.general.R;
+import bank.general.RefreshButtonOnClickListener;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,5 +24,10 @@ public class StartActivity extends Activity {
 	public void LaunchAddProjectScreen(View v){
 		Intent intent = new Intent().setClass(this, bank.project.NewProjectActivity.class);
 		startActivity(intent);
+	}
+	
+	public void RefreshDatabase(View v){
+		RefreshButtonOnClickListener listener = new RefreshButtonOnClickListener();
+		listener.onClick(v);
 	}
 }
