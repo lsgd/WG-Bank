@@ -24,14 +24,14 @@ public class Projectscreen_Tabs extends TabActivity{
 	    intent = new Intent().setClass(this, tabs.projecttabs.PersonActivity.class);
 
 	    // Initialize a TabSpec for each tab and add it to the TabHost
-	    spec = tabHost.newTabSpec("start").setIndicator("Start",
+	    spec = tabHost.newTabSpec("start").setIndicator("",
 	                      res.getDrawable(R.drawable.ic_tab_start))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
 	    // Do the same for the other tabs
 	    intent = new Intent().setClass(this, tabs.projecttabs.EventActivity.class);
-	    spec = tabHost.newTabSpec("Event").setIndicator("Event",
+	    spec = tabHost.newTabSpec("History").setIndicator("History",
 	                      res.getDrawable(R.drawable.history))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);

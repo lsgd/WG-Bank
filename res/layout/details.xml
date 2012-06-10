@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        android:id="@+details/payment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/payment_details"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+        android:id="@+details/project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/details_projectname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <EditText
+        android:id="@+details/payment_project_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10" />
+    
+     <TextView
+        android:id="@+details/payment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/details_paymentname"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <EditText
+        android:id="@+details/payment_name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10" />
+    
+<TextView
+        android:id="@+details/payer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/details_payer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <EditText
+        android:id="@+details/payer_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10" />
+    
+    <TextView
+        android:id="@+details/payment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/details_date"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <EditText
+        android:id="@+details/payment_date_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10" />
+    
+     <TextView
+        android:id="@+details/payment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/details_amount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <EditText
+        android:id="@+details/payment_amount_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10" />
+
+</LinearLayout>
