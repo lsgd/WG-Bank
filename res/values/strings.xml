@@ -12,4 +12,5 @@
     <string name="newaccount_name_description">Bitte trage deinen Namen ein, der in deinen Projekten angezeigt werden soll:</string>
     <string name="newaccount_submit">Zugang anlegen</string>
     <string name="newaccount_cancel">Abbrechen</string>
+    <string name="geldeingabe">Hier können Sie einen neuen Ausgabenbetrag eingeben. </string>
 </resources>

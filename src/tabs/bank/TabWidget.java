@@ -26,17 +26,22 @@ public class TabWidget extends TabActivity{
 
 	    // Initialize a TabSpec for each tab and add it to the TabHost
 	    spec = tabHost.newTabSpec("start").setIndicator("",
-	                      res.getDrawable(R.drawable.ic_tab_start))
+	                      res.getDrawable(R.drawable.ic_tab_einstellungen))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
 	    //Do the same for the other tabs
 	    intent = new Intent().setClass(this, EinstellungenActivity.class);
 	    spec = tabHost.newTabSpec("einstellungen").setIndicator("",
-	                      res.getDrawable(R.drawable.ic_tab_einstellungen))
+	                      res.getDrawable(R.drawable.ic_tab_start))
+	                  .setContent(intent);
+	    tabHost.addTab(spec);
+	    intent = new Intent().setClass(this, tabs.projecttabs.SubmitEventActivity.class);
+	    spec = tabHost.newTabSpec("New Event").setIndicator("Neu",
+	                      res.getDrawable(R.drawable.add))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
 
-	    tabHost.setCurrentTab(2);
+	    tabHost.setCurrentTab(3);
 	}
 }

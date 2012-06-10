@@ -10,7 +10,11 @@ public class StartActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		setContentView(R.layout.button);
+
+		setContentView(R.layout.startscreen);
+	
+		
+
 	}
 	public void LaunchProjectScreen(View v){
 		Intent intent = new Intent().setClass(this, tabs.projecttabs.Projectscreen_Tabs.class);

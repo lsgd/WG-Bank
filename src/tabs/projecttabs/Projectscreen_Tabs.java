@@ -30,13 +30,19 @@ public class Projectscreen_Tabs extends TabActivity{
 	    tabHost.addTab(spec);
 
 	    // Do the same for the other tabs
-	    intent = new Intent().setClass(this, tabs.bank.TabWidget.class);
-	    spec = tabHost.newTabSpec("Home").setIndicator("Einstellungen",
-	                      res.getDrawable(R.drawable.ic_tab_start_white))
+	    intent = new Intent().setClass(this, tabs.projecttabs.EventActivity.class);
+	    spec = tabHost.newTabSpec("Event").setIndicator("Event",
+	                      res.getDrawable(R.drawable.history))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
-
-	    tabHost.setCurrentTab(2);
+	    
+	    intent = new Intent().setClass(this, tabs.projecttabs.SubmitEventActivity.class);
+	    spec = tabHost.newTabSpec("New Event").setIndicator("Neu",
+	                      res.getDrawable(R.drawable.add))
+	                  .setContent(intent);
+	    tabHost.addTab(spec);
+	    
+	    tabHost.setCurrentTab(3);
 	}
 }
 
