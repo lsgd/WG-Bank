@@ -4,25 +4,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import bank.general.R;
-import bank.general.RefreshButtonOnClickListener;
-import bank.utils.OurSQLiteHelper;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
+import bank.general.R;
+import bank.utils.OurSQLiteHelper;
 
 public class PersonActivity extends Activity {
 	
@@ -74,10 +64,42 @@ public class PersonActivity extends Activity {
 	  
 	 
 	}
+	
 	public void addPerson(View v){
 		Intent intent;
-		intent= new Intent().setClass(this, tabs.projecttabs.AddPersonActivity.class);
-		startActivity(intent);
+		intent= new Intent().setClass(this, bank.tabs.AddPersonProjectActivity.class);
+		intent.putExtra("Project", "4");
+		intent.putExtra("ProjectName", "Project Romanus");
+		startActivityForResult(intent, 5);
+	}
+
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		if (resultCode == RESULT_OK && requestCode == 5) {
+			evaluateResult(data);
+		}
+	}
+	
+	protected void evaluateResult(Intent intent) {
+		int code = intent.getIntExtra("code", 0);
+		
+		if(code == 0 || code == 1 || code == 2 || code == 3) {
+			Toast.makeText(getBaseContext(), "Es ist ein Fehler aufgetreten! Die Person wurde nicht hinzugefügt.", Toast.LENGTH_LONG).show();
+		}
+		else if(code == 4) {
+			Toast.makeText(getBaseContext(), "Die angegebene Person existiert nicht in der Datenbank.", Toast.LENGTH_LONG).show();
+		}
+		else if(code == 5) {
+			Intent i = new Intent().setClass(this, tabs.projecttabs.Projectscreen_Tabs.class);
+			startActivity(i);
+			Toast.makeText(getBaseContext(), "Die Person wurde erfolgreich hinzugefügt.", Toast.LENGTH_LONG).show();
+		}
+		else {
+			Intent i = new Intent().setClass(this, tabs.projecttabs.Projectscreen_Tabs.class);
+			startActivity(i);
+		}
 	}
 	
 }

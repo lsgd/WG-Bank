@@ -27,4 +27,9 @@
     <string name="details_participants">Teilgenommen haben: </string>
     
     <string name="startscreen_new_button">neu </string>
+    
+    <string name="addperson_title">Neue Person hinzufügen</string>
+    <string name="addperson_description">Telefonnummer:</string>
+    <string name="addperson_submit">Person hinzufügen</string>
+    <string name="addperson_cancel">Abbrechen</string>
 </resources>

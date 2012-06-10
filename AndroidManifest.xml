@@ -36,6 +36,9 @@
             android:name="bank.firstlaunch.NewAccountActivity">
         </activity>
         <activity
+            android:name="bank.tabs.AddPersonProjectActivity">
+        </activity>
+        <activity
             android:name="bank.general.LauncherActivity"
             android:launchMode="singleInstance" >
             <intent-filter>
@@ -51,8 +54,7 @@
         
         
          <activity
-            android:name="tabs.projecttabs.PersonActivity"
-            android:launchMode="singleInstance" >
+            android:name="tabs.projecttabs.PersonActivity">
         </activity>
          <activity
             android:name=".Test"
@@ -60,9 +62,7 @@
         </activity>
          <activity
             android:name="tabs.projecttabs.Projectscreen_Tabs"
-            
-            android:launchMode="singleInstance"
-            >
+            android:launchMode="singleTask" >
             
         </activity>
           
