@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World!</string>
+    <string name="app_name">WG-Bank</string>
+	<string name="aktualisieren">Aktualisieren</string>
+    <string name="firstlaunch_welcome">Willkommen bei der WG-Bank</string>
+    <string name="firstlaunch_phone_description">Bitte gib deine Telefonnummer zur Identifizierung ein:</string>
+    <string name="firstlaunch_password_description">Falls du bereits einen Zugang besitzt, gib bitte dein Passwort mit ein:</string>
+    <string name="firstlaunch_submit">Jetzt kostenlos anmelden</string>
+    <string name="newaccount_headline">Neuen Zugang erstellen</string>
+    <string name="newaccount_name_description">Bitte trage deinen Namen ein, der in deinen Projekten angezeigt werden soll:</string>
+    <string name="newaccount_submit">Zugang anlegen</string>
+    <string name="newaccount_cancel">Abbrechen</string>
+    <string name="geldeingabe">Hier können Sie einen neuen Ausgabenbetrag eingeben. </string>
+    <string name="settings_title">Einstellungen </string>
+    <string name="settings_username">Benutzername: </string>
+    <string name="settings_phonenumber">Nummer: </string>
+    <string name="settings_password">Passwort: </string>
+
+    <string name="payment_details">Details der Zahlung: </string>
+    <string name="details_date">Datum: </string>
+    <string name="details_projectname">Projekt: </string>
+    <string name="details_amount">Betrag: </string>
+    <string name="details_payer">Gezahlt hat: </string>
+    <string name="details_paymentname">Zweck/Betreff: </string>
+    <string name="details_participants">Teilgenommen haben: </string>
+</resources>
