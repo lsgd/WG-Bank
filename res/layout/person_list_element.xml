@@ -2,50 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="horizontal" >
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/name"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:textSize="16px"
-        android:textStyle="bold" >
-    </TextView>
-
-    <LinearLayout
-        android:layout_width="0dip"
-        android:layout_height="wrap_content"
-        android:layout_weight=".3"
-        android:gravity="center"
-        android:orientation="horizontal" >
-
+        android:layout_height="match_parent">
+        
         <TextView
-            android:id="@+id/balance"
-            android:textColor="#ED243B"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+	        android:id="@+id/name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="left"
+	        android:text="Name"
+	        android:textStyle="bold" >
+	    </TextView>
+        
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/listbutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            >
-        </TextView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="0dip"
-        android:layout_height="wrap_content"
-        android:layout_weight=".3"
-        android:gravity="right"
-        android:orientation="horizontal" >
-
-        <ImageButton
-            android:id="@+id/listbutton"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
             android:layout_gravity="right"
-            android:background="@drawable/button_normal"
+            android:background="@drawable/garbage2"
             android:src="@drawable/garbage2"
             >
         </ImageButton>
-    </LinearLayout>
 
+        <TextView
+            android:id="@+id/balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/listbutton"
+            android:layout_centerVertical="true"
+            android:paddingRight="30dp"
+            android:text="0,00 €"
+            android:textColor="#ED243B" />
+
+    </RelativeLayout>
 </LinearLayout>
