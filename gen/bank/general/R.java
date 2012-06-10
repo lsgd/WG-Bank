@@ -25,7 +25,9 @@ public final class R {
         public static final int ic_tab_start_white=0x7f02000b;
         public static final int nav_refresh_green=0x7f02000c;
         public static final int piggy_bank_euro=0x7f02000d;
-        public static final int signboard_open=0x7f02000e;
+        public static final int refresh=0x7f02000e;
+        public static final int signboard_open=0x7f02000f;
+        public static final int standardgradient=0x7f020010;
     }
     public static final class firstlaunch {
         public static final int btn_submit=0x7f060004;
@@ -35,12 +37,18 @@ public final class R {
         public static final int tf_phone=0x7f060001;
     }
     public static final class id {
+        public static final int Betrag=0x7f05000e;
+        public static final int Betreff=0x7f05000d;
+        public static final int Bezahltvon=0x7f05000f;
+        public static final int Datum=0x7f05000c;
         public static final int balance=0x7f050005;
         public static final int button1=0x7f050008;
-        public static final int editText1=0x7f050009;
+        public static final int editText1=0x7f05000a;
         public static final int editText2=0x7f050001;
+        public static final int imageButton1=0x7f050009;
         public static final int imageView1=0x7f050002;
         public static final int list_persons=0x7f050007;
+        public static final int list_zahlung=0x7f05000b;
         public static final int listbutton=0x7f050006;
         public static final int name=0x7f050004;
         public static final int textView1=0x7f050000;
@@ -56,13 +64,25 @@ public final class R {
         public static final int newaccount=0x7f030006;
         public static final int person_list_element=0x7f030007;
         public static final int persons_tab=0x7f030008;
-        public static final int startscreen=0x7f030009;
-        public static final int submitevent=0x7f03000a;
+        public static final int settings=0x7f030009;
+        public static final int startscreen=0x7f03000a;
+        public static final int submitevent=0x7f03000b;
+        public static final int zahlung_list=0x7f03000c;
+        public static final int zahlung_list_element=0x7f03000d;
     }
     public static final class newaccount {
         public static final int cancel=0x7f070001;
         public static final int submit=0x7f070002;
         public static final int tf_name=0x7f070000;
+    }
+    public static final class settings {
+        public static final int password=0x7f080005;
+        public static final int password_edit=0x7f080006;
+        public static final int phonenumber=0x7f080003;
+        public static final int phonenumber_edit=0x7f080004;
+        public static final int title=0x7f080000;
+        public static final int username=0x7f080001;
+        public static final int username_edit=0x7f080002;
     }
     public static final class string {
         public static final int aktualisieren=0x7f040002;
@@ -77,5 +97,9 @@ public final class R {
         public static final int newaccount_headline=0x7f040007;
         public static final int newaccount_name_description=0x7f040008;
         public static final int newaccount_submit=0x7f040009;
+        public static final int settings_password=0x7f04000f;
+        public static final int settings_phonenumber=0x7f04000e;
+        public static final int settings_title=0x7f04000c;
+        public static final int settings_username=0x7f04000d;
     }
 }

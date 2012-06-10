@@ -31,7 +31,7 @@ public class Projectscreen_Tabs extends TabActivity{
 
 	    // Do the same for the other tabs
 	    intent = new Intent().setClass(this, tabs.projecttabs.EventActivity.class);
-	    spec = tabHost.newTabSpec("Event").setIndicator("Event",
+	    spec = tabHost.newTabSpec("History").setIndicator("History",
 	                      res.getDrawable(R.drawable.history))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
