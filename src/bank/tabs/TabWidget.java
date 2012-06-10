@@ -5,11 +5,9 @@ package bank.tabs;
 import bank.general.R;
 import android.app.TabActivity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.widget.TabHost;
-import android.widget.Toast;
 
 public class TabWidget extends TabActivity{
 	public void onCreate(Bundle savedInstanceState) {
@@ -31,7 +29,7 @@ public class TabWidget extends TabActivity{
 	    tabHost.addTab(spec);
 
 	    //Do the same for the other tabs
-	    intent = new Intent().setClass(this, EinstellungenActivity.class);
+	    intent = new Intent().setClass(this, SettingsActivity.class);
 	    spec = tabHost.newTabSpec("einstellungen").setIndicator("",
 	                      res.getDrawable(R.drawable.ic_tab_start))
 	                  .setContent(intent);

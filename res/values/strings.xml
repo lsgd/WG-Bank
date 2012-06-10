@@ -13,4 +13,8 @@
     <string name="newaccount_submit">Zugang anlegen</string>
     <string name="newaccount_cancel">Abbrechen</string>
     <string name="geldeingabe">Hier können Sie einen neuen Ausgabenbetrag eingeben. </string>
+    <string name="settings_title">Einstellungen </string>
+    <string name="settings_username">Benutzername: </string>
+    <string name="settings_phonenumber">Nummer: </string>
+    <string name="settings_password">Passwort: </string>
 </resources>
