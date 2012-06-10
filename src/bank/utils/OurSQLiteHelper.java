@@ -86,7 +86,7 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		cursor.moveToFirst();
 		
 		payments = cursor.getString(2);
-		Toast.makeText(context, payments, Toast.LENGTH_LONG).show();
+		//Toast.makeText(context, payments, Toast.LENGTH_LONG).show();
 	}
 
 	public void insertPersonProject(ArrayList<ContentValues> contentValuesArray) {
@@ -102,7 +102,7 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		cursor.moveToFirst();
 		
 		personProjects = cursor.getString(2);
-		Toast.makeText(context, personProjects, Toast.LENGTH_LONG).show();		
+		//Toast.makeText(context, personProjects, Toast.LENGTH_LONG).show();		
 	}
 
 	public void insertPaymentPersons(ArrayList<ContentValues> contentValuesArray) {
@@ -118,7 +118,7 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		cursor.moveToFirst();
 		
 		personProjects = cursor.getString(3);
-		Toast.makeText(context, personProjects, Toast.LENGTH_LONG).show();
+		//Toast.makeText(context, personProjects, Toast.LENGTH_LONG).show();
 		db.close();
 	}
 
@@ -135,7 +135,7 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		cursor.moveToFirst();
 		
 		project = cursor.getString(1);
-		Toast.makeText(context, project, Toast.LENGTH_LONG).show();
+		//Toast.makeText(context, project, Toast.LENGTH_LONG).show();
 		
 	}
 	 public Map<String, String> selectPaymentPersons(int project) {
@@ -157,7 +157,7 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		         String person = cursor.getString(1);
 		         results.put(person, costs);
 		                 
-		   Toast.makeText(context, person+": "+costs, Toast.LENGTH_LONG).show();
+		   //Toast.makeText(context, person+": "+costs, Toast.LENGTH_LONG).show();
 		            cursor.moveToNext();
 		        }
 		        cursor.close();   
@@ -177,7 +177,7 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		         String name = cursor.getString(1);
 		         results.put(name, new Float(0.0));
 		                 
-		   Toast.makeText(context, name, Toast.LENGTH_LONG).show();
+		   //Toast.makeText(context, name, Toast.LENGTH_LONG).show();
 		            cursor.moveToNext();
 		        }
 		        cursor.close();   

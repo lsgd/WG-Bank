@@ -7,6 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.ContentValues;
+import android.content.SharedPreferences;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
@@ -51,7 +52,7 @@ public class RefreshButtonOnClickListener implements OnClickListener {
 		}
 		else
 		{
-			Toast.makeText(refreshButton.getContext(), response, Toast.LENGTH_LONG).show();
+			//Toast.makeText(refreshButton.getContext(), response, Toast.LENGTH_LONG).show();
 			JSONObject responseJson;
 			try {
 				responseJson = new JSONObject(response);

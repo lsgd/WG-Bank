@@ -13,6 +13,11 @@ public class LauncherActivity extends Activity {
 		setContentView(R.layout.launcher);
 		
 		SharedPreferences sp = getSharedPreferences("wgbank", MODE_PRIVATE);
+//		SharedPreferences.Editor editor = sp.edit();
+//		editor.putString("Number", "");
+//		editor.putString("Password", "");
+//		editor.putString("Name", "");
+//		editor.commit();
 	    String number = sp.getString("Number", "");
 	    if(number.equals("")) {
 	    	Intent intent = new Intent().setClass(this, bank.firstlaunch.FirstlaunchActivity.class);

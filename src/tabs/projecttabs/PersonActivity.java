@@ -12,6 +12,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 import bank.general.R;
+import bank.general.RefreshButtonOnClickListener;
 import bank.utils.OurSQLiteHelper;
 
 public class PersonActivity extends Activity {
@@ -94,6 +95,11 @@ public class PersonActivity extends Activity {
 		else if(code == 5) {
 			Intent i = new Intent().setClass(this, tabs.projecttabs.Projectscreen_Tabs.class);
 			startActivity(i);
+			
+
+			//RefreshButtonOnClickListener listener = new RefreshButtonOnClickListener();
+			//listener.onClick(null);
+			
 			Toast.makeText(getBaseContext(), "Die Person wurde erfolgreich hinzugefügt.", Toast.LENGTH_LONG).show();
 		}
 		else {
