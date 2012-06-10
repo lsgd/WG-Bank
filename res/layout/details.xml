@@ -4,8 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="top"
     android:orientation="vertical" >
-    
-    
+
     <TextView
         android:id="@+details/payment_details"
         android:layout_width="wrap_content"
@@ -13,12 +12,18 @@
         android:layout_marginTop="20dp"
         android:text="@string/payment_details"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal" >
      
      <TextView
         android:id="@+details/project"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="@string/details_projectname"
         android:textAppearance="?android:attr/textAppearanceMedium" />
      
@@ -28,12 +33,19 @@
         android:layout_height="wrap_content"
         android:editable="false"
         android:ems="10" />
-    
+    </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
      <TextView
         android:id="@+details/payment_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="@string/details_paymentname"
         android:textAppearance="?android:attr/textAppearanceMedium" />
      
@@ -43,12 +55,17 @@
         android:layout_height="wrap_content"
         android:editable="false"
         android:ems="10" />
-    
+     </LinearLayout>
+             <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal" >
 <TextView
         android:id="@+details/payer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="@string/details_payer"
         android:textAppearance="?android:attr/textAppearanceMedium" />
      
@@ -58,12 +75,18 @@
         android:layout_height="wrap_content"
         android:editable="false"
         android:ems="10" />
-    
+         </LinearLayout>
+         
+             <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal" >
     <TextView
         android:id="@+details/payment_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="@string/details_date"
         android:textAppearance="?android:attr/textAppearanceMedium" />
      
@@ -73,13 +96,34 @@
         android:layout_height="wrap_content"
         android:editable="false"
         android:ems="10" />
-    
+        </LinearLayout>
+                     <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal" >
      <TextView
         android:id="@+details/payment_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:text="@string/details_amount"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+    <EditText
+        android:id="@+details/payment_amount_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:editable="false"
+        android:ems="10" />
+      </LinearLayout>
+      
+
+     <TextView
+        android:id="@+details/payment_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/details_participants"
         android:textAppearance="?android:attr/textAppearanceMedium" />
      
     <EditText

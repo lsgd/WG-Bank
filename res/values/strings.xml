@@ -24,4 +24,5 @@
     <string name="details_amount">Betrag: </string>
     <string name="details_payer">Gezahlt hat: </string>
     <string name="details_paymentname">Zweck/Betreff: </string>
+    <string name="details_participants">Teilgenommen haben: </string>
 </resources>

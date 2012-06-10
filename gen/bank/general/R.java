@@ -20,6 +20,7 @@ public final class R {
         public static final int payment_details=0x7f060000;
         public static final int payment_name=0x7f060003;
         public static final int payment_name_edit=0x7f060004;
+        public static final int payment_participants=0x7f06000b;
         public static final int payment_project_edit=0x7f060002;
         public static final int project=0x7f060001;
     }
@@ -103,6 +104,7 @@ public final class R {
         public static final int app_name=0x7f040001;
         public static final int details_amount=0x7f040013;
         public static final int details_date=0x7f040011;
+        public static final int details_participants=0x7f040016;
         public static final int details_payer=0x7f040014;
         public static final int details_paymentname=0x7f040015;
         public static final int details_projectname=0x7f040012;

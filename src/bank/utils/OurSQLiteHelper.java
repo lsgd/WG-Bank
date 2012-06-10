@@ -1,6 +1,8 @@
 package bank.utils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -136,5 +138,31 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		Toast.makeText(context, project, Toast.LENGTH_LONG).show();
 		
 	}
+	 public Map<String, String> selectPaymentPersons(int project) {
+		  Map<String, String> results = new HashMap<String, String>();
+		  SQLiteDatabase db = this.getReadableDatabase();
+		  String[]projectArray = new String[1];
+		     projectArray[0] = String.valueOf(project);
+		     String sql = "SELECT SUM(pp.costs) AS costs, p.name FROM " + TABLE_PERSON_PAYMENT_NAME + " pp "
+		    + "INNER JOIN payment pa ON pa.id = pp.payment "
+		    + "INNER JOIN person_project p ON pp.person = p.person "
+		        + "WHERE pa.project = ? AND pa.project = p.project AND pp.ispayer = 1 " // AND pp.ispayer = 0
+		        + "GROUP BY pp.person;";
+		     
+		  Cursor cursor = db.rawQuery(sql, projectArray);  
+		  cursor.moveToFirst();
+		  
+		        while (cursor.isAfterLast() == false) {         
+		         String costs = cursor.getString(0);
+		         String person = cursor.getString(1);
+		         results.put(person, costs);
+		                 
+		   Toast.makeText(context, person+": "+costs, Toast.LENGTH_LONG).show();
+		            cursor.moveToNext();
+		        }
+		        cursor.close();   
+		        
+		        return results; 
+		 }
 
 }
