@@ -4,18 +4,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import bank.general.R;
-import bank.general.RefreshButtonOnClickListener;
-import bank.utils.OurSQLiteHelper;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
+import bank.general.R;
+import bank.general.RefreshButtonOnClickListener;
+import bank.utils.OurSQLiteHelper;
 
 public class StartActivity extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
@@ -52,11 +51,13 @@ public class StartActivity extends Activity {
 		  //setContentView(lv);
 //			for (String name : personAccount.keySet()) {
 //			    String account = personAccount.get(name);
-			for (int i=0; i<=4; i++){
+			OurSQLiteHelper helper = new OurSQLiteHelper(this);
+			Map<String, Float> map = helper.selectProject();
+			for (String name : map.keySet()){
 			    HashMap item = new HashMap();
 //			     item.put("line1", name);
 //			     item.put("line2", account);
-			     item.put("projectname", "WG-Kasse");
+			     item.put("projectname", name);
 			     item.put("balance", "3,58 Euro");
 
 			     myListing.add(item);
