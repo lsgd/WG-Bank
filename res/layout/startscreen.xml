@@ -3,12 +3,32 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+startscreen/new_button"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_normal"
+            android:onClick="LaunchProjectScreen"
+            android:padding="10dp"
+            android:src="@drawable/add"
+            android:text="@string/startscreen_new_button" />
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="319dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp" >
 
         <TextView
             android:id="@+id/textView1"

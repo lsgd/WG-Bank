@@ -34,11 +34,11 @@ public class TabWidget extends TabActivity{
 	                      res.getDrawable(R.drawable.ic_tab_start))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
-	    intent = new Intent().setClass(this, tabs.projecttabs.SubmitEventActivity.class);
-	    spec = tabHost.newTabSpec("New Event").setIndicator("Neu",
-	                      res.getDrawable(R.drawable.add))
-	                  .setContent(intent);
-	    tabHost.addTab(spec);
+//	    intent = new Intent().setClass(this, tabs.projecttabs.SubmitEventActivity.class);
+//	    spec = tabHost.newTabSpec("New Event").setIndicator("Neu",
+//	                      res.getDrawable(R.drawable.add))
+//	                  .setContent(intent);
+//	    tabHost.addTab(spec);
 
 	    tabHost.setCurrentTab(3);
 	}
