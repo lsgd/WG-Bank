@@ -18,6 +18,10 @@
            >
         </activity>
         <activity
+            android:name="bank.details.PaymentDetails"
+           >
+        </activity>
+        <activity
             android:name="tabs.projecttabs.EventActivity"
             android:launchMode="singleInstance" >
         </activity>

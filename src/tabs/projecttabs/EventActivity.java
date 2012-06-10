@@ -35,7 +35,7 @@ public class EventActivity extends Activity {
 			    public void onItemClick(AdapterView<?> parent, View view,
 			        int position, long id) {
 			      // When clicked, show a toast with the TextView text
-			      Intent intent= new Intent().setClass(getBaseContext(),AddPersonActivity.class);
+			      Intent intent= new Intent().setClass(getBaseContext(),bank.details.PaymentDetails.class);
 			      startActivity(intent);
 			    }
 			  });
