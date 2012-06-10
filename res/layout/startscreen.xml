@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
-
+
     <LinearLayout
         android:layout_width="319dp"
         android:layout_height="wrap_content"
@@ -21,17 +21,28 @@
         <ImageButton
             android:id="@+id/button1"
             android:layout_width="97dp"
+            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:src="@drawable/signboard_open"
-            android:onClick="LaunchProjectScreen"
             android:background="@drawable/button_normal"
+            android:onClick="LaunchProjectScreen"
             android:padding="10dp"
-             />
+            android:src="@drawable/signboard_open" />
     </LinearLayout>
-    <LinearLayout android:layout_width="243dp"
-        android:layout_height="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:gravity="bottom"
         android:orientation="horizontal" >
-        
-    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="150dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_normal"
+            android:src="@drawable/refresh" />
+
+    </RelativeLayout>
 
 </LinearLayout>
