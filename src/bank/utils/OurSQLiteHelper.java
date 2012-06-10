@@ -116,7 +116,8 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		cursor.moveToFirst();
 		
 		personProjects = cursor.getString(3);
-		Toast.makeText(context, personProjects, Toast.LENGTH_LONG).show();		
+		Toast.makeText(context, personProjects, Toast.LENGTH_LONG).show();
+		db.close();
 	}
 
 	public void insertProjects(ArrayList<ContentValues> contentValuesArray) {

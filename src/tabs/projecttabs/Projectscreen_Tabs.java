@@ -24,7 +24,7 @@ public class Projectscreen_Tabs extends TabActivity{
 	    intent = new Intent().setClass(this, tabs.projecttabs.PersonActivity.class);
 
 	    // Initialize a TabSpec for each tab and add it to the TabHost
-	    spec = tabHost.newTabSpec("start").setIndicator("Start",
+	    spec = tabHost.newTabSpec("start").setIndicator("",
 	                      res.getDrawable(R.drawable.ic_tab_start))
 	                  .setContent(intent);
 	    tabHost.addTab(spec);
