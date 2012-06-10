@@ -33,6 +33,7 @@ public class NewProjectActivity extends Activity {
 			
 			obj.put("Action", "project-add");
 			obj.put("AuthPerson", Utils.sha1(sp.getString("Number", "") + sp.getString("Password", "")));
+			obj.put("Number", sp.getString("Number", ""));
 			obj.put("Name", e_projectName.toString());
 			
 			Toast.makeText(v.getContext(), HttpUtils.postData(obj), Toast.LENGTH_LONG).show();
