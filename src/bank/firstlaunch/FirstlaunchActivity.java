@@ -1,10 +1,11 @@
-package firstlaunch.bank;
+package bank.firstlaunch;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import wg.bank.HttpUtils;
-import wg.bank.R;
+
+import bank.general.R;
+import bank.utils.HttpUtils;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,6 +21,7 @@ public class FirstlaunchActivity extends Activity {
 	public EditText tfPhone = null;
 	public EditText tfPassword = null;
 	private Context _context;
+	private String _tmpName;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -52,9 +54,10 @@ public class FirstlaunchActivity extends Activity {
 				SharedPreferences.Editor editor = sp.edit();
 				editor.putString("Number", tfPhone.getText().toString());
 				editor.putString("Password", tfPassword.getText().toString());
+				editor.putString("Name", _tmpName);
 				editor.commit();
 				
-				Intent intent = new Intent().setClass(this, tabs.bank.TabWidget.class);
+				Intent intent = new Intent().setClass(this, bank.tabs.TabWidget.class);
 				startActivity(intent);
 				
 				finish();
@@ -70,7 +73,7 @@ public class FirstlaunchActivity extends Activity {
 	protected Boolean validatePerson(String Number, String Password) {
 		JSONObject obj = new JSONObject();
 		try {
-			String auth = wg.bank.Utils.sha1(Number+Password);
+			String auth = bank.utils.Utils.sha1(Number+Password);
 			obj.put("Action", "person-validate");
 			obj.put("Number", Number);
 			obj.put("AuthPerson", auth);
@@ -94,6 +97,7 @@ public class FirstlaunchActivity extends Activity {
 			else {
 				try {
 					if(responseJson.getString("Status").equals("ok")) {
+						_tmpName = responseJson.getString("Name");
 						return true;
 					}
 					else {
@@ -113,6 +117,7 @@ public class FirstlaunchActivity extends Activity {
 			SharedPreferences.Editor editor = sp.edit();
 			editor.putString("Number", tfPhone.getText().toString());
 			editor.putString("Password", data.getStringExtra("Password"));
+			editor.putString("Name", data.getStringExtra("Name"));
 			editor.commit();
 		}
 		else if(code.equals("2")) {

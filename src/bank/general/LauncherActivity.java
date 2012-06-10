@@ -1,5 +1,6 @@
-package wg.bank;
+package bank.general;
 
+import bank.general.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,11 +15,11 @@ public class LauncherActivity extends Activity {
 		SharedPreferences sp = getSharedPreferences("wgbank", MODE_PRIVATE);
 	    String number = sp.getString("Number", "");
 	    if(number.equals("")) {
-	    	Intent intent = new Intent().setClass(this, firstlaunch.bank.FirstlaunchActivity.class);
+	    	Intent intent = new Intent().setClass(this, bank.firstlaunch.FirstlaunchActivity.class);
 	    	startActivity(intent);
 	    }
 	    else {
-			Intent intent = new Intent().setClass(this, tabs.bank.TabWidget.class);
+			Intent intent = new Intent().setClass(this, bank.tabs.TabWidget.class);
 			startActivity(intent);
 	    }
 	    finish();

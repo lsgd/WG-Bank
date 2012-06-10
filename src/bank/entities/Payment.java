@@ -1,4 +1,4 @@
-package wg.bank;
+package bank.entities;
 
 import java.util.Date;
 

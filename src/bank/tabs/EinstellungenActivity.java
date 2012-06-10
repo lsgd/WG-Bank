@@ -1,4 +1,4 @@
-package tabs.bank;
+package bank.tabs;
 
 import android.app.Activity;
 import android.os.Bundle;

@@ -1,6 +1,7 @@
-package wg.bank;
+package bank.general;
 
 import java.util.ArrayList;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -9,6 +10,8 @@ import android.content.ContentValues;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Toast;
+import bank.utils.HttpUtils;
+import bank.utils.OurSQLiteHelper;
 
 public class RefreshButtonOnClickListener implements OnClickListener {
 

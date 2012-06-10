@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package wg.bank;
+package bank.general;
 
 public final class R {
     public static final class attr {

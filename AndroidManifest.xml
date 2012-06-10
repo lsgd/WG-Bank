@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="wg.bank"
+    package="bank.general"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name="tabs.bank.EinstellungenActivity"
+            android:name="bank.tabs.EinstellungenActivity"
             android:launchMode="singleInstance" >
         </activity>
         <activity
@@ -22,17 +22,17 @@
             android:launchMode="singleInstance" >
         </activity>
         <activity
-            android:name="tabs.bank.StartActivity"
+            android:name="bank.tabs.StartActivity"
             android:launchMode="singleInstance" >
         </activity>
         <activity
-            android:name="firstlaunch.bank.FirstlaunchActivity">
+            android:name="bank.firstlaunch.FirstlaunchActivity">
         </activity>
         <activity
-            android:name="firstlaunch.bank.NewAccountActivity">
+            android:name="bank.firstlaunch.NewAccountActivity">
         </activity>
         <activity
-            android:name="wg.bank.LauncherActivity"
+            android:name="bank.general.LauncherActivity"
             android:launchMode="singleInstance" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="tabs.bank.TabWidget"
+            android:name="bank.tabs.TabWidget"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>

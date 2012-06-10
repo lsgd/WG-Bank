@@ -1,4 +1,4 @@
-package wg.bank;
+package bank.entities;
 
 public class Person {
 	public int ID;

@@ -1,7 +1,7 @@
 package tabs.projecttabs;
 
 
-import wg.bank.R;
+import bank.general.R;
 
 
 import android.app.TabActivity;

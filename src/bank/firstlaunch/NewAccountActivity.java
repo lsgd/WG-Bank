@@ -1,10 +1,11 @@
-package firstlaunch.bank;
+package bank.firstlaunch;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import wg.bank.HttpUtils;
-import wg.bank.R;
+
+import bank.general.R;
+import bank.utils.HttpUtils;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,6 +57,7 @@ public class NewAccountActivity extends Activity {
 				try {
 					if(responseJson.getString("Status") == "ok") {
 						intent.putExtra("Password", responseJson.getString("Password"));
+						intent.putExtra("Name", tfName.getText().toString());
 						intent.putExtra("code", "1");
 					}
 					else {

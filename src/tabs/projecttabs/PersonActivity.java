@@ -3,7 +3,8 @@ package tabs.projecttabs;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import wg.bank.R;
+import bank.general.R;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

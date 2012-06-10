@@ -1,4 +1,4 @@
-package wg.bank;
+package bank.entities;
 //this is not needed yet!!!
 
 

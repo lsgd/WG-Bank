@@ -1,4 +1,4 @@
-package wg.bank;
+package bank.general;
 
 import android.app.Activity;
 import android.os.Bundle;

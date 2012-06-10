@@ -1,4 +1,4 @@
-package wg.bank;
+package bank.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;

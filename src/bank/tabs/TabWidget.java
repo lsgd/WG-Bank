@@ -1,8 +1,8 @@
-package tabs.bank;
+package bank.tabs;
 
 
 
-import wg.bank.R;
+import bank.general.R;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
