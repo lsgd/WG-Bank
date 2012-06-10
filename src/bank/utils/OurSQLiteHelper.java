@@ -163,6 +163,26 @@ public class OurSQLiteHelper extends android.database.sqlite.SQLiteOpenHelper {
 		        cursor.close();   
 		        
 		        return results; 
-		 }
+	 }
+	 
+	 public Map<String, Float> selectProject() {
+		  Map<String, Float> results = new HashMap<String, Float>();
+		  SQLiteDatabase db = this.getReadableDatabase();
+		  String sql = "SELECT * FROM " + TABLE_PROJECT_NAME + ";";
+		     
+		  Cursor cursor = db.rawQuery(sql, null);  
+		  cursor.moveToFirst();
+		  
+		        while (cursor.isAfterLast() == false) {         
+		         String name = cursor.getString(1);
+		         results.put(name, new Float(0.0));
+		                 
+		   Toast.makeText(context, name, Toast.LENGTH_LONG).show();
+		            cursor.moveToNext();
+		        }
+		        cursor.close();   
+		        
+		        return results; 
+	 }
 
 }
