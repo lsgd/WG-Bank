@@ -17,4 +17,11 @@
     <string name="settings_username">Benutzername: </string>
     <string name="settings_phonenumber">Nummer: </string>
     <string name="settings_password">Passwort: </string>
+
+    <string name="payment_details">Details der Zahlung: </string>
+    <string name="details_date">Datum: </string>
+    <string name="details_projectname">Projekt: </string>
+    <string name="details_amount">Betrag: </string>
+    <string name="details_payer">Gezahlt hat: </string>
+    <string name="details_paymentname">Name der Zahlung: </string>
 </resources>
