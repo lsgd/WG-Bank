@@ -23,5 +23,5 @@
     <string name="details_projectname">Projekt: </string>
     <string name="details_amount">Betrag: </string>
     <string name="details_payer">Gezahlt hat: </string>
-    <string name="details_paymentname">Name der Zahlung: </string>
+    <string name="details_paymentname">Zweck/Betreff: </string>
 </resources>
