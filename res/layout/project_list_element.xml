@@ -13,11 +13,11 @@
         <TextView
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
-	        android:id="@+id/name"
+	        android:id="@+id/projectname"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_gravity="left"
-	        android:text="Name"
+	        android:text="projectname"
 	        android:textStyle="bold" >
 	    </TextView>
         
@@ -28,13 +28,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:background="@drawable/garbage2"
-            android:src="@drawable/garbage2"
+            android:onClick="LaunchProjectScreen"
+            android:background="@drawable/signboard_open"
+            android:src="@drawable/signboard_open"
             >
         </ImageButton>
 
         <TextView
-            android:id="@+id/balance"
+            android:id="@+id/projectbalance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"

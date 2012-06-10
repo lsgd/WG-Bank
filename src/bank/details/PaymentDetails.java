@@ -38,4 +38,17 @@ public class PaymentDetails extends Activity {
         tf_payer.setText(intent.getStringExtra("person"));
         tf_amount.setText(intent.getStringExtra("amount"));
     }
+	
+//	public void onPause(Bundle savedInstanceState){
+//		super.onPause();
+//		Intent i= new Intent().setClass(this, tabs.projecttabs.EventActivity.class);
+//		startActivity(i);
+//		finish();
+//	}
+//	public void onDestroy(Bundle savedInstanceState){
+//		super.onDestroy();
+//		Intent i= new Intent().setClass(this, tabs.projecttabs.EventActivity.class);
+//		startActivity(i);
+//		finish();
+//	}
 }

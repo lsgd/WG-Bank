@@ -63,19 +63,22 @@ public final class R {
         public static final int tf_phone=0x7f090001;
     }
     public static final class id {
-        public static final int Betrag=0x7f08000d;
-        public static final int Betreff=0x7f08000c;
-        public static final int Bezahltvon=0x7f08000e;
-        public static final int Datum=0x7f08000b;
+        public static final int Betrag=0x7f080010;
+        public static final int Betreff=0x7f08000f;
+        public static final int Bezahltvon=0x7f080011;
+        public static final int Datum=0x7f08000e;
         public static final int balance=0x7f080005;
-        public static final int button1=0x7f080007;
-        public static final int editText1=0x7f080009;
+        public static final int button1=0x7f08000b;
+        public static final int editText1=0x7f08000c;
         public static final int imageButton1=0x7f080008;
         public static final int imageView1=0x7f080000;
         public static final int list_persons=0x7f080006;
-        public static final int list_zahlung=0x7f08000a;
+        public static final int list_zahlung=0x7f08000d;
         public static final int listbutton=0x7f080004;
         public static final int name=0x7f080003;
+        public static final int project_list=0x7f080007;
+        public static final int projectbalance=0x7f08000a;
+        public static final int projectname=0x7f080009;
         public static final int textView1=0x7f080001;
         public static final int textView2=0x7f080002;
     }
@@ -91,11 +94,13 @@ public final class R {
         public static final int newaccount=0x7f030008;
         public static final int person_list_element=0x7f030009;
         public static final int persons_tab=0x7f03000a;
-        public static final int settings=0x7f03000b;
-        public static final int startscreen=0x7f03000c;
-        public static final int submitevent=0x7f03000d;
-        public static final int zahlung_list=0x7f03000e;
-        public static final int zahlung_list_element=0x7f03000f;
+        public static final int project_list=0x7f03000b;
+        public static final int project_list_element=0x7f03000c;
+        public static final int settings=0x7f03000d;
+        public static final int startscreen=0x7f03000e;
+        public static final int submitevent=0x7f03000f;
+        public static final int zahlung_list=0x7f030010;
+        public static final int zahlung_list_element=0x7f030011;
     }
     public static final class newaccount {
         public static final int cancel=0x7f0a0001;

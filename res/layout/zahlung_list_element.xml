@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="30dp"
+        android:layout_height="20dp"
         android:orientation="horizontal" >
 
         <TextView
@@ -54,10 +54,10 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="30dp"
+        android:layout_height="20dp"
         android:orientation="horizontal" >
 		<TextView 
-		    android:layout_width="75dp"
+		    android:layout_width="87dp"
             android:layout_height="wrap_content"
 		    />
         <TextView
@@ -70,6 +70,7 @@
 
         <TextView
             android:id="@+id/Bezahltvon"
+            android:layout_marginRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             />
