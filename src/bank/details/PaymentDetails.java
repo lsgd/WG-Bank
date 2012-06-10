@@ -23,11 +23,11 @@ public class PaymentDetails extends Activity {
         super.onCreate(savedInstanceState);
                 
         setContentView(R.layout.details);         
-        EditText tf_project = (EditText) findViewById(R.settings.username_edit);       
-        EditText tf_name = (EditText) findViewById(R.settings.phonenumber_edit);
-        EditText tf_date = (EditText) findViewById(R.settings.password_edit);
-        EditText tf_payer = (EditText) findViewById(R.settings.password_edit);
-        EditText tf_amount = (EditText) findViewById(R.settings.password_edit);
+        EditText tf_project = (EditText) findViewById(R.details.project);       
+        EditText tf_name = (EditText) findViewById(R.details.payment_name);
+        EditText tf_date = (EditText) findViewById(R.details.payment_date);
+        EditText tf_payer = (EditText) findViewById(R.details.payer);
+        EditText tf_amount = (EditText) findViewById(R.details.payment_amount);
         
         tf_project.setText("Test");
         tf_name.setText("Test");
