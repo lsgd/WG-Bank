@@ -45,8 +45,6 @@ public class NewAccountActivity extends Activity {
 			try {
 				responseJson = new JSONObject(response);
 			} catch (JSONException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 			}
 			
 			if(responseJson == null) {
@@ -55,7 +53,7 @@ public class NewAccountActivity extends Activity {
 			else {
 				intent.putExtra("code", "3");
 				try {
-					if(responseJson.getString("Status") == "ok") {
+					if(responseJson.getString("Status").equals("ok")) {
 						intent.putExtra("Password", responseJson.getString("Password"));
 						intent.putExtra("Name", tfName.getText().toString());
 						intent.putExtra("code", "1");
